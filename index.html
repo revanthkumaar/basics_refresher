@@ -2,18 +2,21 @@
 <html>
   <head>
     <link rel="stylesheet" href="styles.css" type="text/css" />
-    <link rel="icon" href="images/mcdonalds-logo.jpeg" type="icon"/>
-    <title> Buy burgers </title>
+    <link rel="icon" href="images/mcdonalds-logo.jpeg" type="icon" />
+    <title>Buy burgers</title>
   </head>
   <body>
-    <h1>Ecommerce Website with Javascript</h1>
-    <p>This is the first html page</p>
-    <p>The sum of two numbers given</p>
-    <p id="sumvalue"></p>
-    <button onclick="displayDate()">Show time</button>
-    <button onclick="newFunction()">Show time</button>
+    <select onchange="selectCategory()" id="homePageCategorySelection">
+      <option>All Categories</option>
+      <option>Vehicles</option>
+      <option>Electronics And Home Appliances</option>
+      <option>Furnitue,Home And Decoration</option>
+      <option>Fashion And Beauty</option>
+      <option>Books Sports And Hobbies</option>
+    </select>
 
-     <script src="signin.js"></script>
+    <script src="signin.js"></script>
     <script src="signup.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
