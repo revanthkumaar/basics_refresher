@@ -5,3 +5,6 @@ function selectCategory() {
     selectCategory.options[selectCategory.selectedIndex].value;
   console.log(selectedValue);
 }
+
+//
+

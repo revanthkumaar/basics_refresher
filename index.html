@@ -3,49 +3,50 @@
   <head>
     <link rel="stylesheet" href="styles.css" type="text/css" />
     <link rel="icon" href="images/mcdonalds-logo.jpeg" type="icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Buy burgers</title>
   </head>
   <body>
-    <select onchange="selectCategory()" id="homePageCategorySelection">
-      <option>All Categories</option>
-      <option>Vehicles</option>
-      <option>Electronics And Home Appliances</option>
-      <option>Furnitue,Home And Decoration</option>
-      <option>Fashion And Beauty</option>
-      <option>Books Sports And Hobbies</option>
-    </select>
-
-    <ul>
-
-    <li> <a href="favorite.html"  id="favorite">Favorite Products </li>
-      <li>   </li>
-
-        <li>   </li>
-          <li>   </li>
-         
-
-
-
-
-
-    </ul>
-
-    <footer >
-    <div >
-        <div >
-            <address style="color:#f0f5f5;font-family:Times New Roman;Text-Align:center">
-                    Website Owner : Buy & Sell<sup>©</sup><br>
-                    Cell No.      : 09876544<br>
-                    Facebook      : <a href="#">Find Us On Facebook</a><br>
-                    Twitter       : <a href="#">Find Us On Twitter</a><br>
-                    Github       : <a href="#">Find Us On Github</a><br>
-                    </address>
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Buy & Sell</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <!-- <li class="nav-item active " >
+            <a class="nav-link" href="#" id="greetUser"></a>
+          </li> -->
+          <li class="nav-item active " >
+            <a class="nav-link"><input class="form-control border-secondary py-2" type="search" name="search" id="search" placeholder="Search Ads Here" onkeyup="searchFunction()"/></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" class="userProfile" href="User Profile.html" id="userProfile"></a>
+          </li>
+          <li class="nav-item ">
+              <a class="nav-link" class="favourite" style="display: none" href="favourite.html" id="favourite">Favourites</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" id="postad" href="submitad.html">Post An Ad</a>
+          </li>                
+          <li class="nav-item" class="inActiveUser" id="inActiveUser">
+            <a class="nav-link" href="signin.html">Sign In/Register</a>
+          </li>
+          <li class="activeUser nav-item" id="activeUser">
+            <a class="nav-link" href="index.html" onclick="signOut()">Sign Out</a>
+          </li>
+        </ul>
+      </div>
     </div>
- 
-  </footer>
+  </nav>
 
-    <script src="signin.js"></script>
-    <script src="signup.js"></script>
-    <script src="script.js"></script>
+ 
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>
